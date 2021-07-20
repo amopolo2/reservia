@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
+
+
+body
+{
+
+font-family: Raleway, sans-serif;
+
+
+}
+
+.logo
+{
+width: 150px;
+
+
+
+}
+.subtitle
+{
+
+font-weight: 600;
+
+}
+
+header
+{
+   justify-content: flex-end  ; 
+
+}
+.navbar-link 
+{  }
+
+
+nav {display : inline-flex;}
+
+*HEADER*/
+
+.bordureSearch {
+    background-color: grey;
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid;
+   
+}
+
+.padingSearch{padding-left: 20px ;}
+
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.iconSize {
+height: 50px;
+width: 50px
+border-radius: 10px 0 0 10px;
+}
+
+.button-research {
+height: 50px white #ffffff ;
+width: 120px whitesmoke #f5f5f5;
+color: whitesmoke; 
+cursor: pointer;
+border-radius: 0 10px 10px 0;
+}
+
+
+/* HEBERGEMENTS */
+
+.sizeHebergements 
+
+{
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sizeHebergements 
+{
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.imgHebergements1 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.blocHebergements
+{
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.imgHebergements2 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements3 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements4 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements5 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements6 
+{
+background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%; 120px
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+
+
