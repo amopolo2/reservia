@@ -4,21 +4,71 @@
 
 
 
-body
+body{ font-family: Raleway, sans-serif;}
+
+*/ General */
+
+.flexCentre
 {
-
-font-family: Raleway, sans-serif;
-
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.flexAround
+{
+    
+display: flex;
+justify-content: space-around;
+align-items: center;
 
 }
+
+
+.flexBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
 
 .logo
 {
 width: 150px;
+}
+
+.headline.filters
+
+{color: black;
+padding: 15px;
+font-size: large;
+font-weight: 600;
+}
+
+*/ filtres */
 
 
+
+.filters
+
+{
+
+display: inline-flex;
+margin: 10px;
+align-items: center;
+width: 80px;
+justify-content:space-between;
 
 }
+
+.filters
+
+{display: flex;}
+
+
 .subtitle
 {
 
@@ -31,13 +81,11 @@ header
    justify-content: flex-end  ; 
 
 }
-.navbar-link 
-{  }
 
 
 nav {display : inline-flex;}
 
-*HEADER*/
+*/ HEADER*/
 
 .bordureSearch {
     background-color: grey;
@@ -61,7 +109,7 @@ nav {display : inline-flex;}
 
 .iconSize {
 height: 50px;
-width: 50px
+width: 50px;
 border-radius: 10px 0 0 10px;
 }
 
@@ -75,6 +123,8 @@ border-radius: 0 10px 10px 0;
 
 
 /* HEBERGEMENTS */
+
+
 
 .sizeHebergements 
 
@@ -95,10 +145,10 @@ border-radius: 0 10px 10px 0;
 
 .imgHebergements1 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+background-image: url("img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width:  120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
@@ -111,50 +161,50 @@ padding-right: 20px;
 
 .imgHebergements2 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+background-image: url("img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width:  120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
 
 .imgHebergements3 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+background-image: url("img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width:  120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
 
 .imgHebergements4 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+background-image: url("img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width:  120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
 
 .imgHebergements5 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+background-image: url("img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width:  120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
 
 .imgHebergements6 
 {
-background-image: url("file:///C:/Users/user/Documents/Cours%20Openclassrooms/P2_Mopolo_Arnold/reservia/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+background-image: url("img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 background-size: cover;
 background-position: center;
-width: 100%; 120px
+width: 120px;
 height: 120px;
 border-radius: 15px 15px 0 0
 }
