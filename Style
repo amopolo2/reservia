@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
+
+
+body{ font-family: Raleway, sans-serif;}
+
+*/ General */
+
+
+
+
+
+.flexCentre
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.flexAround
+{
+    
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+
+.flexBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.logo
+{
+width: 150px;
+}
+
+.headline.filters
+
+{color: black;
+padding: 15px;
+font-size: large;
+font-weight: 600;
+}
+
+*/ filtres */
+
+
+
+.filters
+
+{
+
+display: inline-flex;
+margin: 10px;
+align-items: center;
+width: 80px;
+justify-content:space-between;
+
+}
+
+.filters
+
+{display: flex;}
+
+
+.subtitle
+{
+
+font-weight: 600;
+
+}
+
+header
+{
+   justify-content: flex-end  ; 
+
+}
+
+
+nav {display : inline-flex;}
+
+*/ HEADER*/
+
+.bordureSearch {
+    background-color: grey;
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid;
+   
+}
+
+.padingSearch{padding-left: 20px ;}
+
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.iconSize {
+height: 50px;
+width: 50px;
+border-radius: 10px 0 0 10px;
+}
+
+.button-research {
+height: 50px white #ffffff ;
+width: 120px whitesmoke #f5f5f5;
+color: whitesmoke; 
+cursor: pointer;
+border-radius: 0 10px 10px 0;
+}
+
+.marseille-cases
+
+{display: flex;}
+
+/* HEBERGEMENTS */
+
+
+
+.sizeHebergements 
+
+{
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sizeHebergements 
+{
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+
+.imgHebergements1 
+{
+background-image: url("img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width:  120px;
+height: 120px;
+border-radius: 15px 15px 0 0;
+}
+
+
+
+.blocHebergementsPrincipale
+
+{
+display: flex;
+flex-flow: row wrap;
+column-count: 3;
+background-color: #e9e9e9;
+border-radius: 15px;
+justify-content: center;
+row-gap: 20px;
+column-gap: 20px;
+width: 60%;
+}
+
+.blocHebergementsPrincipale > h2
+{
+    display: flex;
+  flex: 0 0 100%;
+}
+.blocHebergements
+{
+padding :20px;
+
+background-color: white;
+border-radius: 15px;
+
+}
+
+.imgHebergements2 
+{
+background-image: url("img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width:  120px;
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements3 
+{
+background-image: url("img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width:  120px;
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements4 
+{
+background-image: url("img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width:  120px;
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements5 
+{
+background-image: url("img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width:  120px;
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+
+.imgHebergements6 
+{
+background-image: url("img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 120px;
+height: 120px;
+border-radius: 15px 15px 0 0
+}
+.card
+{
+    width: 200px;
+}
+.card popular
+
+{
+width: 90%;
+height: 100px;
+margin: auto;
+box-shadow: 0 4px 8px 0;
+border-radius: 20;
+padding: 4px;
+display: flex;
+
+}
+
+
+.card > .container
+{
+height: auto;
+font-size: small;
+/* line-height: 0.1cm; */
+
+}
+
+.card > img
+{
+    width: 100%;
+border-radius: 28px 20px 0 0;
+height: 150px;
+
+   
+  
+}
+.card_popular 
+{
+   display: flex; 
+   width: 75% ;
+}
+
+.card_popular > .container 
+
+{
+margin: auto;
+font-size: small;
+flex-direction: column;
+}
+
+.card_popular > img
+
+{
+    width: 120px;
+
+ height: 100px;
+    }
+
+/* Activités */
+
+.marseille-activities
+
+{display: flex;
+    flex-flow: column wrap;
+    column-count: 4;
+    width: 100%;
+    height: 100%;
+}
+
+.activity__full-card
+
+{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50vh;
+    width: 20%;
+    }
+
+    .activity__full-card >a > div > img
+    {
+        display: flex;
+width: 50%;
+height: 100px;
+    }
+
+.column1 
+{
+
+    width: 25%;
+    
+}
+
+.column2 
+{
+
+    width: 25%;
+
+}
+
+.column3 
+{
+
+    width: 25%;
+
+}
+
+.column4 
+{
+
+    width: 25%;
+
+}
+
+
+#imgActivite1 
+{
+
+/*background-image: url("img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");*/
+background-size: cover;
+background-position: center;
+width: 600px;
+height: 300px;
+margin: auto;
+border-radius: 15px 15px 0 0
+}
+
+
+#imgActivite2
+{
+/*background-image: url("img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");*/
+background-size: cover;
+background-position: center;
+width: 600px;
+border-radius: 15px 15px 0 0
+}
+
+
+#imgActivite3
+
+{
+   /* background-image: url("img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");*/
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    border-radius: 15px 15px 0 0
+    }
+
+    #imgActivite4
+
+    {
+        /*background-image: url("img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");*/
+        background-size: cover;
+        background-position: center;
+        width:  600px;
+        height: 40px;
+        border-radius: 15px 15px 0 0
+        }
+
+        #imgActivite5
+
+        {
+            /*background-image: url("img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");*/
+            background-size: cover;
+            background-position: center;
+            width:  600px;
+            height: 100vh;
+            border-radius: 15px 15px 0 0
+            }
+
+             #imgActivite6
+            
+            {
+               /* background-image: url("img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");*/
+                background-size: cover;
+                background-position: center;
+                width:  600px;
+                border-radius: 15px 15px 0 0
+                }
+
+
+                .blocLesPlusPopulaires
+    {
+            display: flex;
+            flex-flow: row wrap;
+            column-count: 3;
+            background-color: #e9e9e9;
+            border-radius: 15px;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+            width: 35%;
+            }
+
+
+            .container
+            
+            {
+justify-content:space-between ;
+display:flex
+
+        }
+
+        .conteneurActivite
+
+        {
+
+            display: flex;
+flex-flow: column wrap;
+column-count: 4;
+background-color ;
+border-radius: 15px;
+justify-content: center;
+row-gap: 20px;
+column-gap: 20px;
+width: 100%;
+height: 400px;
+        }
+
+ 
+      
+
+
