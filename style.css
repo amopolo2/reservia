@@ -4,11 +4,11 @@
 
 
 
-body{ font-family: Raleway, sans-serif;}
-
-*/ General */
+body{ font-family: Raleway, sans-serif; max-width: 1600px;} 
 
 
+
+/* General */
 
 
 
@@ -48,6 +48,12 @@ padding: 15px;
 font-size: large;
 font-weight: 600;
 }
+
+
+
+
+
+
 
 */ filtres */
 
@@ -106,15 +112,98 @@ header {
    
 }
 
-.navbar 
-{
+/*Section 1 Navbar */
+
+
+.navbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . accomodation activities sign-up";
+  }
+
+  #logo {
+    padding: 0;
+  }
+  
+  .navbar .navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  .navbar .navbar-link .underline-effect {
     width: 100%;
+    height: 3px;
+    background: white;
+  }
+  
+  .navbar #navbar-link-accomodation > .underline-effect {
+    background: #0065fc;
+  }
+  
+  .navbar #navbar-link-activities:hover > .underline-effect {
+    background: #0065fc;
+  }
+  
+  #navbar-link-sign-up a {
+    color: #0065fc;
     
-    
-}
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+  }
+  
+  .navbar a:visited {
+    color: #0065fc;
+  }
+  
+  .navbar img {
+    grid-area: logo;
+  }
+  
+  .navbar #navbar-link-accomodation {
+    grid-area: accomodation;
+  }
+  
+  #navbar-link-accomodation a {
+    color: #0065fc;
+  }
+  
+  .navbar #navbar-link-activities {
+    grid-area: activities;
+    color: black;
+  }
+  
+  .navbar #navbar-link-activities a {
+    color: black;
+  }
+  
+  .navbar #navbar-link-activities a:hover {
+    color: #0065fc;
+  }
+  
+  .navbar #navbar-link-sign-up {
+    grid-area: sign-up;
+    color: #0065fc;
+    font-weight: 600;
+  }
+  
+  .navbar .active-link {
+    color: #0065fc;
+  }
+
+
 .links {
     display : inline-flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 /* HEADER */
@@ -158,10 +247,30 @@ border-radius: 10px 0 0 10px;
     padding: 17px;
     cursor: pointer;
   }
-
+g
 .marseille-cases
 
 {display: flex;}
+
+.research-box {
+  display:flex;
+  padding: 5px;
+}
+
+.icon-location {
+  display: flex;
+  border-radius: 17px 0 0 17px;
+  padding: 17px;
+  background-color: #f2f2f2;
+}
+
+.research-bar {
+  width: 200px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  color: black;
+  border: solid #f2f2f2 0.1em;
+}
 
 /* HEBERGEMENTS */
 
@@ -218,11 +327,34 @@ width: 60%;
 }
 .blocHebergements
 {
-padding :20px;
-
+padding :5px;
+width: 250px;
 background-color: white;
 border-radius: 15px;
+margin: 15px;
 
+}
+.blocLesPlusPopulaires
+{
+        display: flex;
+        flex-direction: column;
+        column-count: 3;
+        background-color: #e9e9e9;
+        border-radius: 15px;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 35%;
+        }
+
+
+
+.blocLesPlusPopulaires > .blocHebergements {
+  padding: 5px;
+  height: 150px;
+  border-radius: 15px;
+  margin: 15px;
+  width: 90%;
 }
 
 .imgHebergements2 
@@ -296,14 +428,31 @@ display: flex;
 {
 height: auto;
 font-size: small;
-/* line-height: 0.1cm; */
+display:block ;
+
+/* linheheigh-height: p0.1cm; */
+
+}
+
+.stars
+
+{
+color: #0065fc;
+
+}
+
+
+.link
+
+{
+text-decoration: none;
 
 }
 
 .card > img
 {
-width: 100%;
-border-radius: 28px 20px 0 0;
+width: 250px;
+border-radius: 15px 15px 0 0;
 height: 150px;
 
    
@@ -326,8 +475,9 @@ flex-direction: column;
 .card_popular > img
 
 {
-    width: 120px;
-    height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px 0 0 15px;
     
 }
 
@@ -453,19 +603,7 @@ border-radius: 15px 15px 0 0
                 }
 
 
-                .blocLesPlusPopulaires
-    {
-            display: flex;
-            flex-flow: row wrap;
-            column-count: 3;
-            background-color: #e9e9e9;
-            border-radius: 15px;
-            justify-content: center;
-            row-gap: 20px;
-            column-gap: 20px;
-            width: 35%;
-            }
-
+  
 
             .container
             
@@ -488,33 +626,55 @@ width: 100%;
 height: 400px;
         }
 
+
         /* footer */
 
 
- .footer
-
- {  
-        width: 100%;
-        background: #F2F2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
- }
-      
- .footer-blocs
-
- {
-column-count: 3;
-
- }
-
+        .footer {
+          width: 100%;
+          background: #F2F2F2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .footer-blocs {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 1440px;
+        }
+        
+        .footer-bloc {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .footer-bloc > * {
+          margin-bottom: 10px;
+        }
+        
+        .footer-title {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        
+        .footer-link:hover {
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+        
+        .footer-bloc-assistance {
+          margin-right: 20%;
+        }
 
  /*modif image activité */
 
  .demiimage {
     object-fit: cover;
      height: 120px;
+     border-radius: 15px;
  }
 
  .grandeimage
@@ -522,4 +682,8 @@ column-count: 3;
  {
 object-fit: cover;
 height: 350px;
+border-radius: 15px;
  }
+
+
+ 
