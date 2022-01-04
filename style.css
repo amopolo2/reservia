@@ -365,7 +365,7 @@ width: 60%;
     margin: 15px;
   flex: 0 0 100%;
 }
-.blocHebergements > a text decoration none
+.blocHebergements 
 {
 padding :5px;
 background-color: white;
@@ -500,7 +500,7 @@ height: 150px;
 {
    display: flex;
    height: 100px; 
-   width: 75% ;
+ 
 }
 
 .card_popular > .container 
@@ -615,7 +615,7 @@ border-radius: 15px 15px 0 0
         background-position: center;
         width:  90%;
         border-radius: 15px 15px 0 0;
-        height: 180px;
+        height: 70%;
         
         }
 
@@ -732,6 +732,18 @@ display:flex
      height: 120px;
  }
 
+ .demiimage2
+ {
+  object-fit: cover;
+  height: 140px;
+
+ }
+ .demiimage3
+{
+  object-fit: cover;
+  height: 110px;
+}
+ 
  .grandeimage
 
  {
